@@ -9,7 +9,10 @@ public class Pyramid {
 	    int h = sc.nextInt();
 	    for (int i = 1; i <= h; i++) {
 	      for (int j = 0; j < h; j++) {
-	    	  System.out.print((j >= (h - i))? "* ": " ");
+	    	  System.out.print((j >= (h - i))? "* ": " ");//to pyramid full pyramid.
+	    	  //System.out.print((j >= (h - i))? "*": " ");//to print left side half pyramid.
+	    	  //System.out.print((j >= (h - i))? "* ": "");//to print right sided half pyramid with spaces.
+	    	  //System.out.print((j >= (h - i))? "*": "");//to print right sided half pyramid with out spaces.
 	      }
 
 	      System.out.println("");
