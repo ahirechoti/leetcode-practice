@@ -34,13 +34,16 @@ public class Pyramid {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Use recurssion: ");
-		String userec = sc.next();
 		System.out.println("Enter height of the pyramid");
 	    int h = sc.nextInt();
+		System.out.println("Use recurssion: ");
+		String userec = sc.next();
+		
 	    if(userec.equalsIgnoreCase("yes")) {
+	    	System.out.println("----Recurssive method----");
 	    	pattern(h,h);
 	    }else {
+	    	System.out.println("----Iterative method----");
 	    	for (int i = 1; i <= h; i++) {
 	  	      for (int j = 0; j < h; j++) {
 	  	    	  System.out.print((j >= (h - i))? "* ": " ");//to pyramid full pyramid.
